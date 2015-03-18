@@ -1,2 +1,2 @@
-# ANgular 2 playground
+# Angular 2 playground
 
