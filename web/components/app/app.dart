@@ -6,8 +6,7 @@ import '../simple_component/simple_component.dart' show SimpleComponent;
 
 @Component(selector: 'app', services: const [Store, TodoFactory])
 @Template(
-    url: 'components/app/app.html',
-    directives: const [SimpleComponent, Foreach])
+    url: 'components/app/app.html', directives: const [SimpleComponent, For])
 class AppComponent {
   Store todoStore;
   Todo todoEdit = null;
@@ -31,7 +30,7 @@ class AppComponent {
     var target = event.target;
     if (which == 13) {
       todo.title = target.value;
-      todoStore.save(todo);
+      //todoStore.save(todo);
       todoEdit = null;
     } else if (which == 27) {
       todoEdit = null;
