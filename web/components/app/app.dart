@@ -3,10 +3,12 @@ library app;
 import 'package:angular2/angular2.dart';
 import '../../services/todo_store.dart' show Store, Todo, TodoFactory;
 import '../simple_component/simple_component.dart' show SimpleComponent;
+import '../tabset/tabset.dart';
 
 @Component(selector: 'app', services: const [Store, TodoFactory])
 @Template(
-    url: 'components/app/app.html', directives: const [SimpleComponent, For])
+    url: 'components/app/app.html',
+    directives: const [Tab, Tabset, SimpleComponent, For])
 class AppComponent {
   Store todoStore;
   Todo todoEdit = null;
