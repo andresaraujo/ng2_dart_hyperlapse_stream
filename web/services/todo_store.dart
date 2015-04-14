@@ -25,7 +25,7 @@ class TodoFactory {
 }
 
 class Store {
-  List<KeyModel> list = [new Todo(0, "zero", false)];
+  List<KeyModel> list = [new Todo(0, "Add moar tasks!", false)];
 
   add(KeyModel record) {
     list.add(record);
