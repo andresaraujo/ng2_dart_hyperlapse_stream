@@ -4,10 +4,11 @@ import 'package:angular2/angular2.dart';
 import '../../services/todo_store.dart' show Store, Todo, TodoFactory;
 import '../simple_component/simple_component.dart' show SimpleComponent;
 import '../tabset/tabset.dart';
+import 'dart:html';
 
-@Component(selector: 'app', services: const [Store, TodoFactory])
-@Template(
-    url: 'components/app/app.html',
+@Component(selector: 'app', injectables: const [Store, TodoFactory])
+@View(
+    templateUrl: 'components/app/app.html',
     directives: const [Tab, Tabset, SimpleComponent, For])
 class AppComponent {
   Store todoStore;
@@ -16,10 +17,10 @@ class AppComponent {
 
   AppComponent(this.todoStore, this.todoFactory);
 
-  enterTodo(event, inputElement) {
+  enterTodo(KeyboardEvent event, NgElement inputElement) {
     if (event.which == 13) {
-      this.addTodo(inputElement.value);
-      event.target.value = "";
+      this.addTodo(inputElement.domElement.value);
+      (event.currentTarget as InputElement).value = "";
     }
   }
 
@@ -27,9 +28,9 @@ class AppComponent {
     this.todoEdit = todo;
   }
 
-  doneEditing(event, Todo todo) {
+  doneEditing(KeyboardEvent event, Todo todo) {
     var which = event.which;
-    var target = event.target;
+    InputElement target = event.currentTarget;
     if (which == 13) {
       todo.title = target.value;
       //todoStore.save(todo);

@@ -3,7 +3,7 @@ library components.tabset;
 import 'package:angular2/angular2.dart';
 
 @Component(selector: 'tabset')
-@Template(url: 'components/tabset/tabset.html', directives: const [For])
+@View(templateUrl: 'components/tabset/tabset.html', directives: const [For])
 class Tabset {
   List<Tab> tabs = [];
 
@@ -18,8 +18,8 @@ class Tabset {
   }
 }
 
-@Component(selector: 'tab', bind: const {'tabTitle': 'tab-title'})
-@Template(url: 'components/tabset/tab.html')
+@Component(selector: 'tab', properties: const {'tabTitle': 'tab-title'})
+@View(templateUrl: 'components/tabset/tab.html')
 class Tab {
   bool active = false;
   String tabTitle = "";
