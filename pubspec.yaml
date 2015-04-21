@@ -7,5 +7,5 @@ author: Andres Araujo <a.araujo.azua@gmail.com>
 environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
-  angular2: ">=2.0.0-alpha.6 <3.0.0"
+  angular2: ">=2.0.0-alpha.20 <3.0.0"
   browser: any

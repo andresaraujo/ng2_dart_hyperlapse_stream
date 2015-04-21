@@ -13,10 +13,11 @@ class AppComponent {
 
   AppComponent(this.todoStore, this.todoFactory);
 
-  enterTodo(KeyboardEvent event, NgElement inputElement) {
+  enterTodo(KeyboardEvent event, NgElement ngElement) {
+    InputElement input = (ngElement as InputElement);
     if (event.which == 13) {
-      this.addTodo(inputElement.domElement.value);
-      (event.currentTarget as InputElement).value = "";
+      this.addTodo(input.value);
+      input.value = "";
     }
   }
 
