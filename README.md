@@ -1,6 +1,6 @@
 # Angular 2 Dart playground
 
-Currently contains a dart version of the [Todo application](https://github.com/angular/angular/tree/master/modules/examples/src/todo)
+A playground to test Angular 2 Dart
 
 ## Live Demo
-http://andresaraujo.github.io/ng2_playground/
+http://andresaraujo.github.io/ng2_dart_playground/
