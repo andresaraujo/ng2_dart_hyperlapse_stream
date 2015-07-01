@@ -2,12 +2,8 @@ library app.igcaption;
 
 import 'package:angular2/angular2.dart';
 
-@Component(
-  selector: "ig-caption",
-  properties: const ["avatar", "caption"]
-)
-@View(
-  template: """
+@Component(selector: "ig-caption", properties: const ["avatar", "caption"])
+@View(template: """
 <div class="card-panel grey lighten-5 z-depth-1">
   <div class="row valign-wrapper">
     <div class="col s2">
@@ -20,8 +16,7 @@ import 'package:angular2/angular2.dart';
     </div>
   </div>
 </div>
-  """
-)
+  """)
 class IGCaption {
   String caption;
   String avatar;
