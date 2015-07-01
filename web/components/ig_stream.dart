@@ -1,4 +1,4 @@
-library igtream;
+library app.igtream;
 
 import "dart:html" as html;
 import "dart:async";
@@ -22,10 +22,10 @@ template:
 """
 )
 class IGStream {
-  List<Map> videos = [];
-  html.VideoElement videoEl;
-  num videoIndex = 0;
-  String nextUrl;
+  List<Map> _videos = [];
+  html.VideoElement _videoEl;
+  num _videoIndex = 0;
+  String _nextUrl;
 
   EventEmitter onplay = new EventEmitter();
 
@@ -33,47 +33,27 @@ class IGStream {
 
     var el = ref.nativeElement as html.HtmlElement;
 
-    videoEl = el.children.first;
-    videoEl.addEventListener("ended", (_) => playNextVideo());
+    _videoEl = el.children.first;
+    _videoEl.addEventListener("ended", (_) => _playNextVideo());
 
-    fetchVideos();
+    _fetchVideos();
   }
 
-  fetchVideosCallback(response) {
-    Map result = convert.JSON.decode(
-        js.context['JSON'].callMethod(
-            'stringify',
-            [response]
-        )
-    );
-    List<Map> returnedObjects = result['data'];
-
-    for (var i = 0; i < returnedObjects.length; i++) {
-      if (returnedObjects[i]['type'] == "video") {
-        videos.add(returnedObjects[i]);
-      }
-    }
-    if(videoIndex == 0) {
-      initializeContent();
-    }
-    nextUrl = result['pagination']['next_url'];
-  }
-
-  fetchVideos() {
-    var url = nextUrl != null ? nextUrl : "https://api.instagram.com/v1/tags/hyperlapse/media/recent?client_id=425a6039c8274956bc10387bba3597e8";
+  _fetchVideos() {
+    var url = _nextUrl != null ? _nextUrl : "https://api.instagram.com/v1/tags/hyperlapse/media/recent?client_id=425a6039c8274956bc10387bba3597e8";
 
     jsonp(url+"&count=4").then((result){
       List<Map> returnedObjects = result['data'];
 
       for (var i = 0; i < returnedObjects.length; i++) {
         if (returnedObjects[i]['type'] == "video") {
-          videos.add(returnedObjects[i]);
+          _videos.add(returnedObjects[i]);
         }
       }
-      if(videoIndex == 0) {
+      if(_videoIndex == 0) {
         initializeContent();
       }
-      nextUrl = result['pagination']['next_url'];
+      _nextUrl = result['pagination']['next_url'];
     });
   }
 
@@ -82,27 +62,27 @@ class IGStream {
   }
 
   playVideo(num index) {
-    var videoObj =  videos[index];
-    videoEl.src = videoObj['videos']['standard_resolution']['url'];
-    videoEl.load();
+    var videoObj =  _videos[index];
+    _videoEl.src = videoObj['videos']['standard_resolution']['url'];
+    _videoEl.load();
 
     // send play event
     onplay.add(videoObj);
   }
 
-  playNextVideo(){
-    if(videoIndex == videos.length - 1) return;
-    videoIndex++;
-    playVideo(videoIndex);
+  _playNextVideo(){
+    if(_videoIndex == _videos.length - 1) return;
+    _videoIndex++;
+    playVideo(_videoIndex);
 
     // fetch more videos if we are near the end
-    if(videoIndex == videos.length - 2) {
-      this.fetchVideos();
+    if(_videoIndex == _videos.length - 2) {
+      _fetchVideos();
     }
   }
 
   onAllChangesDone() {
-
+    //nothing
   }
 }
 

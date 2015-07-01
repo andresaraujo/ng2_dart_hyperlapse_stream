@@ -10,3 +10,6 @@ dependencies:
   angular2: ">=2.0.0-alpha.28 <3.0.0"
   jsonp_request: "^0.0.1"
   browser: any
+#transformers:
+#  - angular2:
+#      entry_points: web/main.dart

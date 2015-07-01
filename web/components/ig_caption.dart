@@ -1,4 +1,4 @@
-library igcaption;
+library app.igcaption;
 
 import 'package:angular2/angular2.dart';
 
