@@ -5,9 +5,8 @@
         </div>
     </div>
     <div class="col s6">
-        <ul>
-            <li *ng-for="#i of playlist2">a</li>
-        </ul>
+        <ig-caption [avatar]="i.user?.profile_picture" [caption]="i.caption?.text"
+                    *ng-for="#i of playlist"></ig-caption>
     </div>
 </div>
 <display></display>
