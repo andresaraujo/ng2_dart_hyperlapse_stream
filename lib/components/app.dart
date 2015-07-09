@@ -7,7 +7,7 @@ import 'ig_caption.dart';
 
 @Component(selector: 'app')
 @View(
-    templateUrl: 'components/app.html',
+    templateUrl: 'package:ng2_playground/components/app.html',
     directives: const [NgFor, IGStream, IGCaption])
 class App {
   List<JsonObject> playlist = [];
