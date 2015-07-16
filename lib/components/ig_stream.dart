@@ -5,11 +5,14 @@ import "dart:async";
 import "dart:convert" as convert;
 import "dart:js" as js;
 import "package:angular2/angular2.dart";
+import "package:angular2/router.dart";
+import "package:angular2/src/facade/async.dart" show ObservableWrapper;
+import 'package:json_object/json_object.dart';
 
 @Component(
     selector: "ig-hyperlapse-stream",
     events: const ["onplay"],
-    lifecycle: const [onAllChangesDone])
+    lifecycle: const [LifecycleEvent.onAllChangesDone])
 @View(template: """
 <video height="100%" width="100%" autoplay muted>
   <source src="" type="video/mp4">
@@ -23,8 +26,9 @@ class IGStream {
   String _nextUrl;
 
   EventEmitter onplay = new EventEmitter();
+  Jsonp _jsonp;
 
-  IGStream(ElementRef ref) {
+  IGStream(ElementRef ref, this._jsonp) {
     var el = ref.nativeElement as html.HtmlElement;
 
     _videoEl = el.children.first;
@@ -38,8 +42,9 @@ class IGStream {
         ? _nextUrl
         : "https://api.instagram.com/v1/tags/hyperlapse/media/recent?client_id=425a6039c8274956bc10387bba3597e8";
 
-    jsonp(url + "&count=4").then((result) {
-      List<Map> returnedObjects = result['data'];
+    _jsonp.request("$url&callback=JSONP_CALLBACK").listen((resp) {
+      JsonObject data = resp.json();
+      List<Map> returnedObjects = data['data'];
 
       for (var i = 0; i < returnedObjects.length; i++) {
         if (returnedObjects[i]['type'] == "video") {
@@ -49,7 +54,7 @@ class IGStream {
       if (_videoIndex == 0) {
         initializeContent();
       }
-      _nextUrl = result['pagination']['next_url'];
+      _nextUrl = data['pagination']['next_url'];
     });
   }
 
@@ -80,22 +85,4 @@ class IGStream {
   onAllChangesDone() {
     //nothing
   }
-}
-
-Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
-  var completer = new Completer<Map>();
-
-  var processData = (result) {
-    Map map = convert.JSON
-        .decode(js.context['JSON'].callMethod('stringify', [result]));
-    completer.complete(map);
-  };
-  js.context[callbackParam] = processData;
-
-  html.ScriptElement script = new html.ScriptElement();
-  script.src = url + "&callback=$callbackParam";
-  html.document.body.children.add(script);
-  script.remove();
-
-  return completer.future;
 }
