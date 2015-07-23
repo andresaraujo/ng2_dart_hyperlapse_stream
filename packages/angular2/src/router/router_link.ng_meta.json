@@ -3,15 +3,16 @@
     "id": "RouterLink",
     "selector": "[router-link]",
     "compileChildren": true,
-    "hostProperties": {},
+    "hostProperties": {
+      "attr.href": "visibleHref"
+    },
     "hostListeners": {
       "^click": "onClick()"
     },
     "hostActions": {},
     "hostAttributes": {},
     "properties": [
-      "route: routerLink",
-      "params: routerParams"
+      "routeParams: routerLink"
     ],
     "readAttributes": [],
     "type": 0,
@@ -20,7 +21,7 @@
     "callOnCheck": false,
     "callOnInit": false,
     "callOnChange": false,
-    "callOnAllChangesDone": true,
+    "callOnAllChangesDone": false,
     "events": [],
     "changeDetection": null,
     "version": 1
