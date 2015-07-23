@@ -4,6 +4,7 @@
 import 'package:angular2/angular2.dart';
 import 'package:angular2/di.dart';
 import 'package:angular2/http.dart';
+import 'package:angular2/router.dart';
 
 // These imports will go away soon:
 import 'package:angular2/src/reflection/reflection.dart' show reflector;
@@ -16,7 +17,7 @@ void main() {
   // Temporarily needed.
   reflector.reflectionCapabilities = new ReflectionCapabilities();
 
-  bootstrap(App, [ bind(UrlResolver).toClass(DartUrlResolver), jsonpInjectables ]);
+  bootstrap(App, [ bind(UrlResolver).toClass(DartUrlResolver), jsonpInjectables, routerInjectables ]);
 }
 
 //This is temporary, to enable package: URLs
