@@ -1,25 +1,28 @@
 {
   "IGStream": {
-    "id": "IGStream",
-    "selector": "ig-hyperlapse-stream",
-    "compileChildren": true,
-    "hostProperties": {},
-    "hostListeners": {},
-    "hostActions": {},
-    "hostAttributes": {},
-    "properties": [],
-    "readAttributes": [],
-    "type": 1,
-    "exportAs": null,
-    "callOnDestroy": false,
-    "callOnCheck": false,
-    "callOnInit": false,
-    "callOnChange": false,
-    "callOnAllChangesDone": true,
-    "events": [
-      "onplay"
-    ],
-    "changeDetection": null,
-    "version": 1
+    "kind": "type",
+    "value": {
+      "id": "IGStream",
+      "selector": "ig-hyperlapse-stream",
+      "compileChildren": true,
+      "hostProperties": {},
+      "hostListeners": {},
+      "hostActions": {},
+      "hostAttributes": {},
+      "properties": [],
+      "readAttributes": [],
+      "type": 1,
+      "exportAs": null,
+      "callOnDestroy": false,
+      "callOnCheck": false,
+      "callOnInit": false,
+      "callOnChange": false,
+      "callOnAllChangesDone": true,
+      "events": [
+        "onplay"
+      ],
+      "changeDetection": null,
+      "version": 1
+    }
   }
 }
