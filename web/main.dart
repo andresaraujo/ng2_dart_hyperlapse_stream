@@ -2,9 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:angular2/angular2.dart';
-import 'package:angular2/bootstrap.dart';
-import 'package:angular2/di.dart';
-import 'package:angular2/router.dart';
+import 'package:angular2/bootstrap.dart' show bootstrap;
 
 import 'package:ng2_playground/components/app.dart' show App;
 

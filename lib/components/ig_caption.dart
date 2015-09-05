@@ -1,6 +1,6 @@
 library app.igcaption;
 
-import 'package:angular2/angular2.dart';
+import 'package:angular2/angular2.dart' show Component, View;
 
 @Component(selector: "ig-caption", properties: const ["avatar", "caption"])
 @View(template: """

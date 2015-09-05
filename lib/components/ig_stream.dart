@@ -1,12 +1,10 @@
 library app.igtream;
 
 import "dart:html" as html;
-import "dart:async";
+import "dart:async" show Completer, Future;
 import "dart:convert" as convert;
 import "dart:js" as js;
-import "package:angular2/angular2.dart";
-import "package:angular2/src/facade/async.dart" show ObservableWrapper;
-import 'package:json_object/json_object.dart';
+import "package:angular2/angular2.dart" show Component, ElementRef, EventEmitter, LifecycleEvent, View;
 
 @Component(
     selector: "ig-hyperlapse-stream",

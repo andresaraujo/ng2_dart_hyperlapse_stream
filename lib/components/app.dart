@@ -1,9 +1,9 @@
 library app;
 
-import 'package:angular2/angular2.dart';
-import 'package:json_object/json_object.dart';
-import 'ig_stream.dart';
-import 'ig_caption.dart';
+import 'package:angular2/angular2.dart' show Component, NgFor, View;
+import 'package:json_object/json_object.dart' show JsonObject;
+import 'ig_stream.dart' show IGStream;
+import 'ig_caption.dart' show IGCaption;
 
 @Component(selector: 'app')
 @View(

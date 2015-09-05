@@ -7,7 +7,7 @@ author: Andres Araujo <a.araujo.azua@gmail.com>
 environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
-  angular2: "2.0.0-alpha.35"
+  angular2: "2.0.0-alpha.36"
 #  angular2:
 #     git: git://github.com/andresaraujo/ng2_dart_snapshot.git
   json_object: "^1.0.19"
