@@ -8,8 +8,7 @@ import "package:angular2/angular2.dart" show Component, ElementRef, EventEmitter
 
 @Component(
     selector: "ig-hyperlapse-stream",
-    events: const ["onplay"],
-    lifecycle: const [LifecycleEvent.onAllChangesDone])
+    events: const ["onplay"])
 @View(template: """
 <video height="100%" width="100%" autoplay muted>
   <source src="" type="video/mp4">
@@ -76,10 +75,6 @@ class IGStream {
       _fetchVideos();
     }
   }
-
-  onAllChangesDone() {
-    //nothing
-  }
 }
 
 Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
@@ -99,3 +94,5 @@ Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
 
   return completer.future;
 }
+
+const list = const [const {/*...*/}, const {/*...*/}];
