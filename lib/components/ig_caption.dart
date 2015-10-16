@@ -2,7 +2,7 @@ library app.igcaption;
 
 import 'package:angular2/angular2.dart' show Component, View;
 
-@Component(selector: "ig-caption", properties: const ["avatar", "caption"])
+@Component(selector: "ig-caption", inputs: const ["avatar", "caption"])
 @View(template: """
 <div class="card-panel grey lighten-5 z-depth-1">
   <div class="row valign-wrapper">
