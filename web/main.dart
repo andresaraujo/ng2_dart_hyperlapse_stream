@@ -5,6 +5,4 @@ import 'package:angular2/bootstrap.dart' show bootstrap;
 
 import 'package:ng2_playground/components/app.dart' show App;
 
-void main() {
-  bootstrap(App);
-}
+void main() => bootstrap(App);

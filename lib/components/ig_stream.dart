@@ -4,12 +4,11 @@ import "dart:html" as html;
 import "dart:async" show Completer, Future;
 import "dart:convert" as convert;
 import "dart:js" as js;
-import "package:angular2/angular2.dart" show Component, ElementRef, EventEmitter, View;
+import "package:angular2/angular2.dart";
 
 @Component(
     selector: "ig-hyperlapse-stream",
-    outputs: const ["onplay"])
-@View(template: """
+    template: """
 <video height="100%" width="100%" autoplay muted>
   <source src="" type="video/mp4">
   <p>Not supported video tag</p>
@@ -21,7 +20,7 @@ class IGStream {
   num _videoIndex = 0;
   String _nextUrl;
 
-  EventEmitter onplay = new EventEmitter();
+  @Output() EventEmitter onplay = new EventEmitter();
 
   IGStream(ElementRef ref) {
     var el = ref.nativeElement as html.HtmlElement;
@@ -95,4 +94,7 @@ Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
   return completer.future;
 }
 
-const list = const [const {/*...*/}, const {/*...*/}];
+const list = const [
+  const {/*...*/},
+  const {/*...*/}
+];
