@@ -1,10 +1,29 @@
 library app.igtream;
 
-import "dart:html" as html;
 import "dart:async" show Completer, Future;
 import "dart:convert" as convert;
+import "dart:html" as html;
 import "dart:js" as js;
+
 import "package:angular2/angular2.dart";
+
+Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
+  var completer = new Completer<Map>();
+
+  var processData = (result) {
+    Map map = convert.JSON
+        .decode(js.context['JSON'].callMethod('stringify', [result]));
+    completer.complete(map);
+  };
+  js.context[callbackParam] = processData;
+
+  html.ScriptElement script = new html.ScriptElement();
+  script.src = url + "&callback=$callbackParam";
+  html.document.body.children.add(script);
+  script.remove();
+
+  return completer.future;
+}
 
 @Component(
     selector: "ig-hyperlapse-stream",
@@ -20,7 +39,7 @@ class IGStream {
   num _videoIndex = 0;
   String _nextUrl;
 
-  @Output() EventEmitter onplay = new EventEmitter();
+  @Output() EventEmitter onPlay = new EventEmitter();
 
   IGStream(ElementRef ref) {
     var el = ref.nativeElement as html.HtmlElement;
@@ -29,6 +48,19 @@ class IGStream {
     _videoEl.addEventListener("ended", (_) => _playNextVideo());
 
     _fetchVideos();
+  }
+
+  initializeContent() {
+    playVideo(0);
+  }
+
+  playVideo(num index) {
+    var videoObj = _videos[index];
+    _videoEl.src = videoObj['videos']['standard_resolution']['url'];
+    _videoEl.load();
+
+    // send play event
+    onPlay.add(videoObj);
   }
 
   _fetchVideos() {
@@ -51,19 +83,6 @@ class IGStream {
     });
   }
 
-  initializeContent() {
-    playVideo(0);
-  }
-
-  playVideo(num index) {
-    var videoObj = _videos[index];
-    _videoEl.src = videoObj['videos']['standard_resolution']['url'];
-    _videoEl.load();
-
-    // send play event
-    onplay.add(videoObj);
-  }
-
   _playNextVideo() {
     if (_videoIndex == _videos.length - 1) return;
     _videoIndex++;
@@ -75,26 +94,3 @@ class IGStream {
     }
   }
 }
-
-Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
-  var completer = new Completer<Map>();
-
-  var processData = (result) {
-    Map map = convert.JSON
-        .decode(js.context['JSON'].callMethod('stringify', [result]));
-    completer.complete(map);
-  };
-  js.context[callbackParam] = processData;
-
-  html.ScriptElement script = new html.ScriptElement();
-  script.src = url + "&callback=$callbackParam";
-  html.document.body.children.add(script);
-  script.remove();
-
-  return completer.future;
-}
-
-const list = const [
-  const {/*...*/},
-  const {/*...*/}
-];
