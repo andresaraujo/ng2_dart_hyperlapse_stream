@@ -28,25 +28,29 @@ Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
 @Component(
     selector: "ig-hyperlapse-stream",
     template: """
-<video height="100%" width="100%" autoplay muted>
+<video #videoplayer
+  height="100%"
+  width="100%"
+  autoplay muted
+  (ended)="playNextVideo()"
+  [src]="srcVid">
+
   <source src="" type="video/mp4">
+
   <p>Not supported video tag</p>
+
 </video>
 """)
-class IGStream {
+class IGStream implements AfterViewInit {
   List<Map> _videos = [];
-  html.VideoElement _videoEl;
   num _videoIndex = 0;
   String _nextUrl;
 
+  String srcVid = "";
   @Output() EventEmitter onPlay = new EventEmitter();
 
-  IGStream(ElementRef ref) {
-    var el = ref.nativeElement as html.HtmlElement;
-
-    _videoEl = el.children.first;
-    _videoEl.addEventListener("ended", (_) => _playNextVideo());
-
+  @override
+  ngAfterViewInit() {
     _fetchVideos();
   }
 
@@ -56,10 +60,7 @@ class IGStream {
 
   playVideo(num index) {
     var videoObj = _videos[index];
-    _videoEl.src = videoObj['videos']['standard_resolution']['url'];
-    _videoEl.load();
-
-    // send play event
+    srcVid = videoObj['videos']['standard_resolution']['url'];
     onPlay.add(videoObj);
   }
 
@@ -83,7 +84,7 @@ class IGStream {
     });
   }
 
-  _playNextVideo() {
+  playNextVideo() {
     if (_videoIndex == _videos.length - 1) return;
     _videoIndex++;
     playVideo(_videoIndex);
