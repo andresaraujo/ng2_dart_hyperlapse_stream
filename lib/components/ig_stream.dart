@@ -29,6 +29,7 @@ Future<Map> jsonp(String url, [String callbackParam = "callback"]) {
     selector: "ig-hyperlapse-stream",
     template: """
 <video #videoplayer
+  style="max-height: 80vh;"
   height="100%"
   width="100%"
   autoplay muted
