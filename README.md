@@ -1,7 +1,5 @@
-# Angular 2 Dart playground
+# Angular 2 Dart - Hyperlapse Stream
 
-A playground to test Angular 2 Dart
+An example of a Hyperlapse Stream Player component
 
 ## [Live Demo](http://andresaraujo.github.io/ng2_dart_playground/)
-
-### [See Typescript version](https://github.com/andresaraujo/ng2_ts_playground)

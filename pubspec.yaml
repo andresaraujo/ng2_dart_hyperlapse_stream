@@ -1,7 +1,6 @@
-name: 'ng2_playground'
+name: 'ng2_hyperlapse_stream'
 version: 0.0.1
-description: >
-  An absolute bare-bones web app.
+description: An example of a Hyperlapse Stream Player.
 author: Andres Araujo <a.araujo.azua@gmail.com>
 #homepage: https://www.example.com
 environment:
