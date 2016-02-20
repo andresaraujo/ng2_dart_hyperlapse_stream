@@ -60,13 +60,7 @@
         ]
       }
     ],
-    "6": "ig_caption.dart",
-    "10": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "ig_caption.dart"
   },
   "IGCaption": {
     "kind": "type",
@@ -78,7 +72,7 @@
       "exportAs": null,
       "type": {
         "name": "IGCaption",
-        "moduleUrl": "asset:ng2_playground/lib/components/ig_caption.dart",
+        "moduleUrl": "asset:ng2_hyperlapse_stream/lib/components/ig_caption.dart",
         "isHost": false
       },
       "changeDetection": 5,
@@ -94,7 +88,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<div class=\"card-panel blue-grey darken-4 z-depth-1\">\n  <div class=\"row valign-wrapper\">\n    <div class=\"col s2\">\n      <img [src]=\"avatar\" alt=\"\" class=\"circle responsive-img\">\n    </div>\n    <div class=\"col s10\">\n      <span class=\"white-text\">\n        {{ caption }}\n      </span>\n    </div>\n  </div>\n</div>\n  ",
-        "templateUrl": "asset:ng2_playground/lib/components/ig_caption.dart",
+        "templateUrl": "asset:ng2_hyperlapse_stream/lib/components/ig_caption.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

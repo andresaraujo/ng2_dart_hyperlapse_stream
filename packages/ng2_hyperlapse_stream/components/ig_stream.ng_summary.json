@@ -43,7 +43,7 @@
               },
               {
                 "1": "template",
-                "2": "\"\"\"\n<video #videoplayer\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n\"\"\""
+                "2": "\"\"\"\n<video #videoplayer\n  style=\"max-height: 80vh;\"\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n\"\"\""
               }
             ],
             "4": false,
@@ -85,7 +85,7 @@
       "exportAs": null,
       "type": {
         "name": "IGStream",
-        "moduleUrl": "asset:ng2_playground/lib/components/ig_stream.dart",
+        "moduleUrl": "asset:ng2_hyperlapse_stream/lib/components/ig_stream.dart",
         "isHost": false
       },
       "changeDetection": 5,
@@ -101,8 +101,8 @@
       ],
       "template": {
         "encapsulation": 2,
-        "template": "<video #videoplayer\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n",
-        "templateUrl": "asset:ng2_playground/lib/components/ig_stream.dart",
+        "template": "<video #videoplayer\n  style=\"max-height: 80vh;\"\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n",
+        "templateUrl": "asset:ng2_hyperlapse_stream/lib/components/ig_stream.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

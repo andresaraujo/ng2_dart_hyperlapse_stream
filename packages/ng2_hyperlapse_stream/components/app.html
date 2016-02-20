@@ -4,7 +4,7 @@
             <ig-hyperlapse-stream (onplay)="update($event)"></ig-hyperlapse-stream>
         </div>
     </div>
-    <div class="col s4">
+    <div class="col s4" style="max-height: 90vh; overflow-y: scroll">
         <ig-caption [avatar]="i['user']['profile_picture']" [caption]="i['caption']['text']" *ngfor="#i of playlist"></ig-caption>
     </div>
 </div>

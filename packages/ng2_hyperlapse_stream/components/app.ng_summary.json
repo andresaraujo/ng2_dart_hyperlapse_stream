@@ -45,7 +45,7 @@
               },
               {
                 "1": "templateUrl",
-                "2": "'package:ng2_playground/components/app.html'"
+                "2": "'package:ng2_hyperlapse_stream/components/app.html'"
               },
               {
                 "1": "directives",
@@ -72,21 +72,7 @@
         ]
       }
     ],
-    "6": "app.dart",
-    "10": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      },
-      {
-        "1": "ig_stream.template.dart",
-        "4": "i1"
-      },
-      {
-        "1": "ig_caption.template.dart",
-        "4": "i2"
-      }
-    ]
+    "6": "app.dart"
   },
   "App": {
     "kind": "type",
@@ -98,7 +84,7 @@
       "exportAs": null,
       "type": {
         "name": "App",
-        "moduleUrl": "asset:ng2_playground/lib/components/app.dart",
+        "moduleUrl": "asset:ng2_hyperlapse_stream/lib/components/app.dart",
         "isHost": false
       },
       "changeDetection": 5,
@@ -110,8 +96,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<div class=\"row blue-grey darken-2\">\n    <div class=\"col s8\">\n        <div class=\"card-panel blue-grey darken-4 z-depth-1\">\n            <ig-hyperlapse-stream (onPlay)=\"update($event)\"></ig-hyperlapse-stream>\n        </div>\n    </div>\n    <div class=\"col s4\">\n        <ig-caption [avatar]=\"i['user']['profile_picture']\" [caption]=\"i['caption']['text']\"\n                    *ngFor=\"#i of playlist\"></ig-caption>\n    </div>\n</div>\n<display></display>",
-        "templateUrl": "asset:ng2_playground/lib/components/app.html",
+        "template": "<div class=\"row blue-grey darken-2\">\n    <div class=\"col s8\">\n        <div class=\"card-panel blue-grey darken-4 z-depth-1\">\n            <ig-hyperlapse-stream (onPlay)=\"update($event)\"></ig-hyperlapse-stream>\n        </div>\n    </div>\n    <div class=\"col s4\" style=\"max-height: 90vh; overflow-y: scroll\">\n        <ig-caption [avatar]=\"i['user']['profile_picture']\" [caption]=\"i['caption']['text']\"\n                    *ngFor=\"#i of playlist\"></ig-caption>\n    </div>\n</div>\n<display></display>",
+        "templateUrl": "asset:ng2_hyperlapse_stream/lib/components/app.html",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
