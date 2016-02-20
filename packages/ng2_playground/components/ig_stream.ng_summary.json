@@ -1,0 +1,112 @@
+{
+  "ngDeps": {
+    "1": "app.igtream",
+    "3": [
+      {
+        "1": "dart:async",
+        "2": [
+          "Completer",
+          "Future"
+        ],
+        "5": false
+      },
+      {
+        "1": "dart:convert",
+        "4": "convert",
+        "5": false
+      },
+      {
+        "1": "dart:html",
+        "4": "html",
+        "5": false
+      },
+      {
+        "1": "dart:js",
+        "4": "js",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "IGStream",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "\"ig-hyperlapse-stream\""
+              },
+              {
+                "1": "template",
+                "2": "\"\"\"\n<video #videoplayer\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n\"\"\""
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "6": [
+          "AfterViewInit"
+        ],
+        "7": [
+          {
+            "1": "onPlay",
+            "2": [
+              {
+                "1": "Output",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "6": "ig_stream.dart"
+  },
+  "IGStream": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "ig-hyperlapse-stream",
+      "exportAs": null,
+      "type": {
+        "name": "IGStream",
+        "moduleUrl": "asset:ng2_playground/lib/components/ig_stream.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {
+        "onPlay": "onPlay"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<video #videoplayer\n  height=\"100%\"\n  width=\"100%\"\n  autoplay muted\n  (ended)=\"playNextVideo()\"\n  [src]=\"srcVid\">\n\n  <source src=\"\" type=\"video/mp4\">\n\n  <p>Not supported video tag</p>\n\n</video>\n",
+        "templateUrl": "asset:ng2_playground/lib/components/ig_stream.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
+    }
+  }
+}

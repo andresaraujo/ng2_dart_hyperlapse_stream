@@ -1,0 +1,107 @@
+{
+  "ngDeps": {
+    "1": "app",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "2": [
+          "Component",
+          "NgFor"
+        ],
+        "5": false
+      },
+      {
+        "1": "package:json_object/json_object.dart",
+        "2": [
+          "JsonObject"
+        ],
+        "5": false
+      },
+      {
+        "1": "ig_stream.dart",
+        "2": [
+          "IGStream"
+        ],
+        "5": false
+      },
+      {
+        "1": "ig_caption.dart",
+        "2": [
+          "IGCaption"
+        ],
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "App",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'app'"
+              },
+              {
+                "1": "templateUrl",
+                "2": "'package:ng2_playground/components/app.html'"
+              },
+              {
+                "1": "directives",
+                "2": "const [NgFor, IGStream, IGCaption]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "8": [
+          {
+            "2": "NgFor"
+          },
+          {
+            "2": "IGStream"
+          },
+          {
+            "2": "IGCaption"
+          }
+        ]
+      }
+    ],
+    "6": "app.dart"
+  },
+  "App": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "app",
+      "exportAs": null,
+      "type": {
+        "name": "App",
+        "moduleUrl": "asset:ng2_playground/lib/components/app.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<div class=\"row blue-grey darken-2\">\n    <div class=\"col s8\">\n        <div class=\"card-panel blue-grey darken-4 z-depth-1\">\n            <ig-hyperlapse-stream (onPlay)=\"update($event)\"></ig-hyperlapse-stream>\n        </div>\n    </div>\n    <div class=\"col s4\">\n        <ig-caption [avatar]=\"i['user']['profile_picture']\" [caption]=\"i['caption']['text']\"\n                    *ngFor=\"#i of playlist\"></ig-caption>\n    </div>\n</div>\n<display></display>",
+        "templateUrl": "asset:ng2_playground/lib/components/app.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
+    }
+  }
+}

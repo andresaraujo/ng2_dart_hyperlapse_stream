@@ -1,218 +1,157 @@
 {
-  "AppRootUrl": {
-    "kind": "type",
-    "value": {
-      "id": "AppRootUrl",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
+  "ngDeps": {
+    "1": "angular2.core",
+    "4": [
+      {
+        "1": "./src/core/angular_entrypoint.dart",
+        "2": [
+          "AngularEntrypoint"
+        ]
+      },
+      {
+        "1": "./src/core/metadata.dart"
+      },
+      {
+        "1": "./src/core/util.dart"
+      },
+      {
+        "1": "package:angular2/src/facade/lang.dart",
+        "2": [
+          "enableProdMode"
+        ]
+      },
+      {
+        "1": "./src/core/di.dart",
+        "3": [
+          "ForwardRefFn",
+          "resolveForwardRef",
+          "forwardRef"
+        ]
+      },
+      {
+        "1": "./src/facade/facade.dart"
+      },
+      {
+        "1": "./src/core/application_ref.dart",
+        "2": [
+          "platform",
+          "createNgZone",
+          "PlatformRef",
+          "ApplicationRef"
+        ]
+      },
+      {
+        "1": "./src/core/application_tokens.dart",
+        "2": [
+          "APP_ID",
+          "APP_COMPONENT",
+          "APP_INITIALIZER",
+          "PACKAGE_ROOT_URL",
+          "PLATFORM_INITIALIZER"
+        ]
+      },
+      {
+        "1": "./src/core/zone.dart"
+      },
+      {
+        "1": "./src/core/render.dart"
+      },
+      {
+        "1": "./src/core/linker.dart"
+      },
+      {
+        "1": "./src/core/debug/debug_node.dart",
+        "2": [
+          "DebugElement",
+          "DebugNode",
+          "asNativeElements"
+        ]
+      },
+      {
+        "1": "./src/core/testability/testability.dart"
+      },
+      {
+        "1": "./src/core/change_detection.dart"
+      },
+      {
+        "1": "./src/core/platform_directives_and_pipes.dart"
+      },
+      {
+        "1": "./src/core/platform_common_providers.dart"
+      },
+      {
+        "1": "./src/core/application_common_providers.dart"
+      },
+      {
+        "1": "./src/core/reflection/reflection.dart"
+      }
+    ],
+    "6": "core.dart",
+    "10": [
+      {
+        "1": "./src/core/metadata.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "./src/core/di.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "./src/facade/facade.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "./src/core/application_ref.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "./src/core/application_tokens.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "./src/core/zone.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "./src/core/render.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "./src/core/linker.template.dart",
+        "4": "i7"
+      },
+      {
+        "1": "./src/core/debug/debug_node.template.dart",
+        "4": "i8"
+      },
+      {
+        "1": "./src/core/testability/testability.template.dart",
+        "4": "i9"
+      },
+      {
+        "1": "./src/core/change_detection.template.dart",
+        "4": "i10"
+      },
+      {
+        "1": "./src/core/platform_directives_and_pipes.template.dart",
+        "4": "i11"
+      },
+      {
+        "1": "./src/core/platform_common_providers.template.dart",
+        "4": "i12"
+      },
+      {
+        "1": "./src/core/application_common_providers.template.dart",
+        "4": "i13"
+      },
+      {
+        "1": "./src/core/reflection/reflection.template.dart",
+        "4": "i14"
+      }
+    ]
   },
-  "UrlResolver": {
-    "kind": "type",
-    "value": {
-      "id": "UrlResolver",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "ComponentUrlMapper": {
-    "kind": "type",
-    "value": {
-      "id": "ComponentUrlMapper",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DirectiveResolver": {
-    "kind": "type",
-    "value": {
-      "id": "DirectiveResolver",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "CompilerCache": {
-    "kind": "type",
-    "value": {
-      "id": "CompilerCache",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "Compiler": {
-    "kind": "type",
-    "value": {
-      "id": "Compiler",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "AppViewManager": {
-    "kind": "type",
-    "value": {
-      "id": "AppViewManager",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DynamicComponentLoader": {
-    "kind": "type",
-    "value": {
-      "id": "DynamicComponentLoader",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "LifeCycle": {
-    "kind": "type",
-    "value": {
-      "id": "LifeCycle",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
+  "_EMPTY_LIST": {
+    "kind": "alias",
+    "value": []
   }
 }

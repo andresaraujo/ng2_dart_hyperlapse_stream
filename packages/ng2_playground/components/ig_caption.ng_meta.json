@@ -1,29 +1,104 @@
 {
+  "ngDeps": {
+    "1": "app.igcaption",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "IGCaption",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "\"ig-caption\""
+              },
+              {
+                "1": "template",
+                "2": "\"\"\"\n<div class=\"card-panel blue-grey darken-4 z-depth-1\">\n  <div class=\"row valign-wrapper\">\n    <div class=\"col s2\">\n      <img [src]=\"avatar\" alt=\"\" class=\"circle responsive-img\">\n    </div>\n    <div class=\"col s10\">\n      <span class=\"white-text\">\n        {{ caption }}\n      </span>\n    </div>\n  </div>\n</div>\n  \"\"\""
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "7": [
+          {
+            "1": "caption",
+            "2": [
+              {
+                "1": "Input",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          },
+          {
+            "1": "avatar",
+            "2": [
+              {
+                "1": "Input",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "6": "ig_caption.dart",
+    "10": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
   "IGCaption": {
     "kind": "type",
     "value": {
-      "id": "IGCaption",
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
       "selector": "ig-caption",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "avatar",
-        "caption"
-      ],
-      "readAttributes": [],
-      "type": 1,
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "IGCaption",
+        "moduleUrl": "asset:ng2_playground/lib/components/ig_caption.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "caption": "caption",
+        "avatar": "avatar"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<div class=\"card-panel blue-grey darken-4 z-depth-1\">\n  <div class=\"row valign-wrapper\">\n    <div class=\"col s2\">\n      <img [src]=\"avatar\" alt=\"\" class=\"circle responsive-img\">\n    </div>\n    <div class=\"col s10\">\n      <span class=\"white-text\">\n        {{ caption }}\n      </span>\n    </div>\n  </div>\n</div>\n  ",
+        "templateUrl": "asset:ng2_playground/lib/components/ig_caption.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
     }
   }
 }

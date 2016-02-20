@@ -1,1082 +1,832 @@
 {
-  "AppRootUrl": {
+  "ngDeps": {
+    "1": "angular2",
+    "4": [
+      {
+        "1": "package:angular2/core.dart"
+      },
+      {
+        "1": "package:angular2/common.dart"
+      },
+      {
+        "1": "package:angular2/instrumentation.dart"
+      },
+      {
+        "1": "package:angular2/src/core/angular_entrypoint.dart",
+        "2": [
+          "AngularEntrypoint"
+        ]
+      },
+      {
+        "1": "package:angular2/src/core/application_tokens.dart",
+        "3": [
+          "APP_COMPONENT_REF_PROMISE",
+          "APP_ID_RANDOM_PROVIDER"
+        ]
+      },
+      {
+        "1": "package:angular2/src/platform/dom/dom_tokens.dart"
+      },
+      {
+        "1": "package:angular2/src/platform/dom/dom_adapter.dart"
+      },
+      {
+        "1": "package:angular2/src/platform/dom/events/event_manager.dart"
+      },
+      {
+        "1": "package:angular2/src/compiler/url_resolver.dart"
+      }
+    ],
+    "6": "angular2.dart",
+    "10": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/common.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:angular2/instrumentation.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:angular2/src/core/application_tokens.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "package:angular2/src/platform/dom/dom_tokens.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "package:angular2/src/platform/dom/dom_adapter.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "package:angular2/src/platform/dom/events/event_manager.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "package:angular2/src/compiler/url_resolver.template.dart",
+        "4": "i7"
+      }
+    ]
+  },
+  "AsyncPipe": {
     "kind": "type",
     "value": {
-      "id": "AppRootUrl",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "AsyncPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/async_pipe.dart",
+        "isHost": false
+      },
+      "name": "async",
+      "pure": false
     }
   },
-  "UrlResolver": {
+  "DatePipe": {
     "kind": "type",
     "value": {
-      "id": "UrlResolver",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "DatePipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/date_pipe.dart",
+        "isHost": false
+      },
+      "name": "date",
+      "pure": true
     }
   },
-  "ComponentUrlMapper": {
+  "JsonPipe": {
     "kind": "type",
     "value": {
-      "id": "ComponentUrlMapper",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "JsonPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/json_pipe.dart",
+        "isHost": false
+      },
+      "name": "json",
+      "pure": false
     }
   },
-  "DirectiveResolver": {
+  "SlicePipe": {
     "kind": "type",
     "value": {
-      "id": "DirectiveResolver",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "SlicePipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/slice_pipe.dart",
+        "isHost": false
+      },
+      "name": "slice",
+      "pure": false
     }
   },
-  "CompilerCache": {
+  "LowerCasePipe": {
     "kind": "type",
     "value": {
-      "id": "CompilerCache",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "LowerCasePipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/lowercase_pipe.dart",
+        "isHost": false
+      },
+      "name": "lowercase",
+      "pure": false
     }
   },
-  "Compiler": {
+  "DecimalPipe": {
     "kind": "type",
     "value": {
-      "id": "Compiler",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "DecimalPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+        "isHost": false
+      },
+      "name": "number",
+      "pure": false
     }
   },
-  "AppViewManager": {
+  "PercentPipe": {
     "kind": "type",
     "value": {
-      "id": "AppViewManager",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "PercentPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+        "isHost": false
+      },
+      "name": "percent",
+      "pure": false
     }
   },
-  "DynamicComponentLoader": {
+  "CurrencyPipe": {
     "kind": "type",
     "value": {
-      "id": "DynamicComponentLoader",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "CurrencyPipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/number_pipe.dart",
+        "isHost": false
+      },
+      "name": "currency",
+      "pure": false
     }
   },
-  "LifeCycle": {
+  "UpperCasePipe": {
     "kind": "type",
     "value": {
-      "id": "LifeCycle",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "class": "Pipe",
+      "type": {
+        "name": "UpperCasePipe",
+        "moduleUrl": "asset:angular2/lib/src/common/pipes/uppercase_pipe.dart",
+        "isHost": false
+      },
+      "name": "uppercase",
+      "pure": false
     }
   },
   "NgClass": {
     "kind": "type",
     "value": {
-      "id": "NgClass",
-      "selector": "[ng-class]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "rawClass: ng-class",
-        "initialClasses: class"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngClass]",
       "exportAs": null,
-      "callOnDestroy": true,
-      "callOnCheck": true,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgClass",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_class.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "rawClass": "ngClass",
+        "initialClasses": "class"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        2,
+        1
+      ],
+      "template": null
     }
   },
   "NgFor": {
     "kind": "type",
     "value": {
-      "id": "NgFor",
-      "selector": "[ng-for][ng-for-of]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "ngForOf"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngFor][ngForOf]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": true,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgFor",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_for.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "ngForTrackBy": "ngForTrackBy",
+        "ngForOf": "ngForOf",
+        "ngForTemplate": "ngForTemplate"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        2
+      ],
+      "template": null
     }
   },
   "NgIf": {
     "kind": "type",
     "value": {
-      "id": "NgIf",
-      "selector": "[ng-if]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "ngIf"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngIf]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "NgNonBindable": {
-    "kind": "type",
-    "value": {
-      "id": "NgNonBindable",
-      "selector": "[ng-non-bindable]",
-      "compileChildren": false,
-      "hostProperties": {},
+      "type": {
+        "name": "NgIf",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_if.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "ngIf": "ngIf"
+      },
+      "outputs": {},
       "hostListeners": {},
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "NgStyle": {
     "kind": "type",
     "value": {
-      "id": "NgStyle",
-      "selector": "[ng-style]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "rawStyle: ng-style"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngStyle]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": true,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgStyle",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_style.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "rawStyle": "ngStyle"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        2
+      ],
+      "template": null
     }
   },
   "NgSwitch": {
     "kind": "type",
     "value": {
-      "id": "NgSwitch",
-      "selector": "[ng-switch]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "ngSwitch"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngSwitch]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgSwitch",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_switch.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "ngSwitch": "ngSwitch"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "NgSwitchWhen": {
     "kind": "type",
     "value": {
-      "id": "NgSwitchWhen",
-      "selector": "[ng-switch-when]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [
-        "ngSwitchWhen"
-      ],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngSwitchWhen]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgSwitchWhen",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_switch.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "ngSwitchWhen": "ngSwitchWhen"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "NgSwitchDefault": {
     "kind": "type",
     "value": {
-      "id": "NgSwitchDefault",
-      "selector": "[ng-switch-default]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngSwitchDefault]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "PreGeneratedChangeDetection": {
-    "kind": "type",
-    "value": {
-      "id": "PreGeneratedChangeDetection",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
+      "type": {
+        "name": "NgSwitchDefault",
+        "moduleUrl": "asset:angular2/lib/src/common/directives/ng_switch.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
       "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DynamicChangeDetection": {
-    "kind": "type",
-    "value": {
-      "id": "DynamicChangeDetection",
-      "selector": null,
-      "compileChildren": true,
       "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
       "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "JitChangeDetection": {
-    "kind": "type",
-    "value": {
-      "id": "JitChangeDetection",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "Lexer": {
-    "kind": "type",
-    "value": {
-      "id": "Lexer",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "Parser": {
-    "kind": "type",
-    "value": {
-      "id": "Parser",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "IterableDiffers": {
-    "kind": "type",
-    "value": {
-      "id": "IterableDiffers",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "KeyValueDiffers": {
-    "kind": "type",
-    "value": {
-      "id": "KeyValueDiffers",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "ViewLoader": {
-    "kind": "type",
-    "value": {
-      "id": "ViewLoader",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "SharedStylesHost": {
-    "kind": "type",
-    "value": {
-      "id": "SharedStylesHost",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DomSharedStylesHost": {
-    "kind": "type",
-    "value": {
-      "id": "DomSharedStylesHost",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DefaultDomCompiler": {
-    "kind": "type",
-    "value": {
-      "id": "DefaultDomCompiler",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "DomRenderer": {
-    "kind": "type",
-    "value": {
-      "id": "DomRenderer",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
-    }
-  },
-  "TemplateCloner": {
-    "kind": "type",
-    "value": {
-      "id": "TemplateCloner",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
-      "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "NgControlName": {
     "kind": "type",
     "value": {
-      "id": "NgControlName",
-      "selector": "[ng-control]",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngControl]",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgControlName",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_control_name.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "name": "ngControl",
+        "model": "ngModel"
+      },
+      "outputs": {
+        "update": "ngModelChange"
+      },
       "hostListeners": {},
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [
-        "name: ngControl",
-        "model: ngModel"
+      "lifecycleHooks": [
+        3,
+        1
       ],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": true,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": true,
-      "callOnAllChangesDone": false,
-      "events": [
-        "update: ngModel"
-      ],
-      "changeDetection": null,
-      "version": 1
+      "template": null
     }
   },
   "NgFormControl": {
     "kind": "type",
     "value": {
-      "id": "NgFormControl",
-      "selector": "[ng-form-control]",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngFormControl]",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgFormControl",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_form_control.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "form": "ngFormControl",
+        "model": "ngModel"
+      },
+      "outputs": {
+        "update": "ngModelChange"
+      },
       "hostListeners": {},
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [
-        "form: ngFormControl",
-        "model: ngModel"
+      "lifecycleHooks": [
+        3
       ],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": true,
-      "callOnAllChangesDone": false,
-      "events": [
-        "update: ngModel"
-      ],
-      "changeDetection": null,
-      "version": 1
+      "template": null
     }
   },
   "NgModel": {
     "kind": "type",
     "value": {
-      "id": "NgModel",
-      "selector": "[ng-model]:not([ng-control]):not([ng-form-control])",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngModel]:not([ngControl]):not([ngFormControl])",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgModel",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_model.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "model": "ngModel"
+      },
+      "outputs": {
+        "update": "ngModelChange"
+      },
       "hostListeners": {},
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [
-        "model: ngModel"
+      "lifecycleHooks": [
+        3
       ],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": true,
-      "callOnAllChangesDone": false,
-      "events": [
-        "update: ngModel"
-      ],
-      "changeDetection": null,
-      "version": 1
+      "template": null
     }
   },
   "NgControlGroup": {
     "kind": "type",
     "value": {
-      "id": "NgControlGroup",
-      "selector": "[ng-control-group]",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngControlGroup]",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgControlGroup",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_control_group.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "name": "ngControlGroup"
+      },
+      "outputs": {},
       "hostListeners": {},
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [
-        "name: ng-control-group"
+      "lifecycleHooks": [
+        0,
+        1
       ],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": true,
-      "callOnCheck": false,
-      "callOnInit": true,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "template": null
     }
   },
   "NgFormModel": {
     "kind": "type",
     "value": {
-      "id": "NgFormModel",
-      "selector": "[ng-form-model]",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngFormModel]",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgFormModel",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_form_model.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "form": "ngFormModel"
+      },
+      "outputs": {
+        "ngSubmit": "ngSubmit"
+      },
       "hostListeners": {
         "submit": "onSubmit()"
       },
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [
-        "form: ng-form-model"
+      "lifecycleHooks": [
+        3
       ],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": true,
-      "callOnAllChangesDone": false,
-      "events": [
-        "ngSubmit"
-      ],
-      "changeDetection": null,
-      "version": 1
+      "template": null
     }
   },
   "NgForm": {
     "kind": "type",
     "value": {
-      "id": "NgForm",
-      "selector": "form:not([ng-no-form]):not([ng-form-model]),ng-form,[ng-form]",
-      "compileChildren": true,
-      "hostProperties": {},
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "form:not([ngNoForm]):not([ngFormModel]),ngForm,[ngForm]",
+      "exportAs": "ngForm",
+      "type": {
+        "name": "NgForm",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_form.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {
+        "ngSubmit": "ngSubmit"
+      },
       "hostListeners": {
         "submit": "onSubmit()"
       },
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": "form",
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [
-        "ngSubmit"
-      ],
-      "changeDetection": null,
-      "version": 1
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "DefaultValueAccessor": {
     "kind": "type",
     "value": {
-      "id": "DefaultValueAccessor",
-      "selector": "input:not([type=checkbox])[ng-control],textarea[ng-control],input:not([type=checkbox])[ng-form-control],textarea[ng-form-control],input:not([type=checkbox])[ng-model],textarea[ng-model]",
-      "compileChildren": true,
-      "hostProperties": {
-        "class.ng-untouched": "ngClassUntouched",
-        "class.ng-touched": "ngClassTouched",
-        "class.ng-pristine": "ngClassPristine",
-        "class.ng-invalid": "ngClassInvalid",
-        "class.ng-valid": "ngClassValid",
-        "class.ng-dirty": "ngClassDirty"
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "input:not([type=checkbox])[ngControl],textarea[ngControl],input:not([type=checkbox])[ngFormControl],textarea[ngFormControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]",
+      "exportAs": null,
+      "type": {
+        "name": "DefaultValueAccessor",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/default_value_accessor.dart",
+        "isHost": false
       },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
       "hostListeners": {
-        "change": "onChange($event.target.value)",
         "input": "onChange($event.target.value)",
         "blur": "onTouched()"
       },
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
+      "lifecycleHooks": [],
+      "template": null
+    }
+  },
+  "NgControlStatus": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[ngControl],[ngModel],[ngFormControl]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgControlStatus",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/ng_control_status.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.ng-invalid": "ngClassInvalid",
+        "class.ng-touched": "ngClassTouched",
+        "class.ng-untouched": "ngClassUntouched",
+        "class.ng-valid": "ngClassValid",
+        "class.ng-dirty": "ngClassDirty",
+        "class.ng-pristine": "ngClassPristine"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "CheckboxControlValueAccessor": {
     "kind": "type",
     "value": {
-      "id": "CheckboxControlValueAccessor",
-      "selector": "input[type=checkbox][ng-control],input[type=checkbox][ng-form-control],input[type=checkbox][ng-model]",
-      "compileChildren": true,
-      "hostProperties": {
-        "class.ng-untouched": "ngClassUntouched",
-        "class.ng-touched": "ngClassTouched",
-        "class.ng-pristine": "ngClassPristine",
-        "class.ng-invalid": "ngClassInvalid",
-        "class.ng-dirty": "ngClassDirty",
-        "class.ng-valid": "ngClassValid"
-      },
-      "hostListeners": {
-        "change": "onChange($event.target.checked)",
-        "blur": "onTouched()"
-      },
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "input[type=checkbox][ngControl],input[type=checkbox][ngFormControl],input[type=checkbox][ngModel]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "CheckboxControlValueAccessor",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/checkbox_value_accessor.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {
+        "blur": "onTouched()",
+        "change": "onChange($event.target.checked)"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "NgSelectOption": {
     "kind": "type",
     "value": {
-      "id": "NgSelectOption",
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
       "selector": "option",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "NgSelectOption",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/select_control_value_accessor.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
   "SelectControlValueAccessor": {
     "kind": "type",
     "value": {
-      "id": "SelectControlValueAccessor",
-      "selector": "select[ng-control],select[ng-form-control],select[ng-model]",
-      "compileChildren": true,
-      "hostProperties": {
-        "class.ng-untouched": "ngClassUntouched",
-        "class.ng-touched": "ngClassTouched",
-        "class.ng-pristine": "ngClassPristine",
-        "class.ng-invalid": "ngClassInvalid",
-        "class.ng-valid": "ngClassValid",
-        "class.ng-dirty": "ngClassDirty"
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "select[ngControl],select[ngFormControl],select[ngModel]",
+      "exportAs": null,
+      "type": {
+        "name": "SelectControlValueAccessor",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/select_control_value_accessor.dart",
+        "isHost": false
       },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
       "hostListeners": {
-        "change": "onChange($event.target.value)",
         "input": "onChange($event.target.value)",
         "blur": "onTouched()"
       },
-      "hostActions": {},
+      "hostProperties": {},
       "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
-      "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "lifecycleHooks": [],
+      "template": null
     }
   },
-  "NgRequiredValidator": {
+  "RequiredValidator": {
     "kind": "type",
     "value": {
-      "id": "NgRequiredValidator",
-      "selector": "[required][ng-control],[required][ng-form-control],[required][ng-model]",
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": [],
-      "readAttributes": [],
-      "type": 0,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[required][ngControl],[required][ngFormControl],[required][ngModel]",
       "exportAs": null,
-      "callOnDestroy": false,
-      "callOnCheck": false,
-      "callOnInit": false,
-      "callOnChange": false,
-      "callOnAllChangesDone": false,
-      "events": [],
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "RequiredValidator",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/validators.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
   },
-  "FormBuilder": {
+  "MinLengthValidator": {
     "kind": "type",
     "value": {
-      "id": "FormBuilder",
-      "selector": null,
-      "compileChildren": true,
-      "hostProperties": {},
-      "hostListeners": {},
-      "hostActions": {},
-      "hostAttributes": {},
-      "properties": null,
-      "readAttributes": null,
-      "type": null,
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[minlength][ngControl],[minlength][ngFormControl],[minlength][ngModel]",
       "exportAs": null,
-      "callOnDestroy": null,
-      "callOnCheck": null,
-      "callOnInit": null,
-      "callOnChange": null,
-      "callOnAllChangesDone": null,
-      "events": null,
-      "changeDetection": null,
-      "version": 1
+      "type": {
+        "name": "MinLengthValidator",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/validators.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
     }
+  },
+  "MaxLengthValidator": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "[maxlength][ngControl],[maxlength][ngFormControl],[maxlength][ngModel]",
+      "exportAs": null,
+      "type": {
+        "name": "MaxLengthValidator",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/validators.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
+    }
+  },
+  "RadioControlValueAccessor": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "input[type=radio][ngControl],input[type=radio][ngFormControl],input[type=radio][ngModel]",
+      "exportAs": null,
+      "type": {
+        "name": "RadioControlValueAccessor",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/radio_control_value_accessor.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "name": "name"
+      },
+      "outputs": {},
+      "hostListeners": {
+        "blur": "onTouched()",
+        "change": "onChange()"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        1,
+        0
+      ],
+      "template": null
+    }
+  },
+  "NumberValueAccessor": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": false,
+      "dynamicLoadable": true,
+      "selector": "input[type=number][ngControl],input[type=number][ngFormControl],input[type=number][ngModel]",
+      "exportAs": null,
+      "type": {
+        "name": "NumberValueAccessor",
+        "moduleUrl": "asset:angular2/lib/src/common/forms/directives/number_value_accessor.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {
+        "input": "onChange($event.target.value)",
+        "blur": "onTouched()",
+        "change": "onChange($event.target.value)"
+      },
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null
+    }
+  },
+  "COMMON_DIRECTIVES": {
+    "kind": "alias",
+    "value": [
+      "CORE_DIRECTIVES",
+      "FORM_DIRECTIVES"
+    ]
+  },
+  "COMMON_PIPES": {
+    "kind": "alias",
+    "value": [
+      "AsyncPipe",
+      "UpperCasePipe",
+      "LowerCasePipe",
+      "JsonPipe",
+      "SlicePipe",
+      "DecimalPipe",
+      "PercentPipe",
+      "CurrencyPipe",
+      "DatePipe"
+    ]
   },
   "CORE_DIRECTIVES": {
     "kind": "alias",
@@ -1084,20 +834,17 @@
       "NgClass",
       "NgFor",
       "NgIf",
-      "NgNonBindable",
+      "NgStyle",
       "NgSwitch",
       "NgSwitchWhen",
       "NgSwitchDefault"
     ]
   },
-  "_EMPTY_LIST": {
-    "kind": "alias",
-    "value": []
-  },
-  "FORM_BINDINGS": {
+  "FORM_PROVIDERS": {
     "kind": "alias",
     "value": [
-      "FormBuilder"
+      "FormBuilder",
+      "RadioControlRegistry"
     ]
   },
   "FORM_DIRECTIVES": {
@@ -1111,9 +858,18 @@
       "NgForm",
       "NgSelectOption",
       "DefaultValueAccessor",
+      "NumberValueAccessor",
       "CheckboxControlValueAccessor",
       "SelectControlValueAccessor",
-      "NgRequiredValidator"
+      "RadioControlValueAccessor",
+      "NgControlStatus",
+      "RequiredValidator",
+      "MinLengthValidator",
+      "MaxLengthValidator"
     ]
+  },
+  "_EMPTY_LIST": {
+    "kind": "alias",
+    "value": []
   }
 }

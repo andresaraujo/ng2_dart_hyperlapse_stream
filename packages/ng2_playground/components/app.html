@@ -1,12 +1,11 @@
-<div class="row">
-    <div class="col s6">
-        <div class="card-panel grey lighten-5 z-depth-1">
+<html><head></head><body><div class="row blue-grey darken-2">
+    <div class="col s8">
+        <div class="card-panel blue-grey darken-4 z-depth-1">
             <ig-hyperlapse-stream (onplay)="update($event)"></ig-hyperlapse-stream>
         </div>
     </div>
-    <div class="col s6">
-        <ig-caption [avatar]="i['user']['profile_picture']" [caption]="i['caption']['text']"
-                    *ng-for="#i of playlist"></ig-caption>
+    <div class="col s4">
+        <ig-caption [avatar]="i['user']['profile_picture']" [caption]="i['caption']['text']" *ngfor="#i of playlist"></ig-caption>
     </div>
 </div>
-<display></display>
+<display></display></body></html>
