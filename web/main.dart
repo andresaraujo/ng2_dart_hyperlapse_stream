@@ -2,6 +2,6 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:angular2/bootstrap.dart';
-import 'package:ng2_playground/components/app.dart';
+import 'package:ng2_hyperlapse_stream/components/app.dart';
 
 main() => bootstrap(App);
